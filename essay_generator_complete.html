@@ -20,6 +20,7 @@
     </div>
     <script>
         const essayArray = JSON.parse(localStorage.getItem('essayArray'));
+
         console.log(essayArray);
         document.getElementById('introduction').innerHTML =
             essayArray[0].join(' ');

@@ -352,6 +352,22 @@
 		</div>
 	</body>
 	<script>
+		try {
+            var essayArray = JSON.parse(localStorage.getItem('essayArray'));
+            var idsArray = ['introduction', 'first-para', 'second-para', 'third-para', 'fourth-para', 'conclusion']
+            for (let i = 0; i < idsArray.length   ; i++) {
+                let paraArray = essayArray[i]
+				let formElemet = document.getElementById(idsArray[i])
+				let elementsArray = formElemet.elements
+                for (let j = 0; j < elementsArray.length; j++) {
+					console.log(elementsArray[j], paraArray[j])
+					elementsArray[j].value = paraArray[j]
+                }
+            }
+        } catch (e) {
+            alert(e)
+            var essayArray = []
+        }
 		function generateEssay(){
 			var introArray = []
 			for(var element of document.getElementById('introduction').elements) {
