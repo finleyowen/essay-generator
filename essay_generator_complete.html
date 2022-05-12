@@ -3,7 +3,6 @@
 
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <script src="js/jsPDF/dist/jspdf.min.js"></script>
     <title>VCE English Language Essay</title>
 </head>
 
@@ -36,13 +35,6 @@
             essayArray[4].join(' ');
         document.getElementById('conclusion').innerHTML =
             essayArray[5].join(' ');
-
-        var doc = new jsPDF();
-        var source = window.document.getElementsByTagName('body')[0];
-        doc.fromHTML(source, 15, 15, {
-            width: 180,
-            elementHandlers: elementHandler,
-        });
     </script>
 </body>
 
