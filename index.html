@@ -6,27 +6,29 @@
     <title>VCE English Language Essay Generator</title>
     <meta charset="utf-8">
     <script>
-        try {
-            var essayArray = JSON.parse(localStorage.getItem('essayArray'));
-            var idsArray = [
-                'introduction',
-                'first-para',
-                'second-para',
-                'third-para',
-                'fourth-para',
-                'conclusion',
-            ];
-            for (let i = 0; i < idsArray.length; i++) {
-                let paraArray = essayArray[i];
-                let formElemet = document.getElementById(idsArray[i]);
-                let elementsArray = formElemet.elements;
-                for (let j = 0; j < elementsArray.length; j++) {
-                    console.log(elementsArray[j], paraArray[j]);
-                    elementsArray[j].value = paraArray[j];
+        function loadProgress() {
+            try {
+                var essayArray = JSON.parse(localStorage.getItem('essayArray'));
+                var idsArray = [
+                    'introduction',
+                    'first-para',
+                    'second-para',
+                    'third-para',
+                    'fourth-para',
+                    'conclusion',
+                ];
+                for (let i = 0; i < idsArray.length; i++) {
+                    let paraArray = essayArray[i];
+                    let formElemet = document.getElementById(idsArray[i]);
+                    let elementsArray = formElemet.elements;
+                    for (let j = 0; j < elementsArray.length; j++) {
+                        console.log(elementsArray[j], paraArray[j]);
+                        elementsArray[j].value = paraArray[j];
+                    }
                 }
+            } catch (e) {
+                var essayArray = [];
             }
-        } catch (e) {
-            var essayArray = [];
         }
 
         function saveProgress() {
@@ -83,7 +85,7 @@
     </script>
 </head>
 
-<body>
+<body onload="loadProgress()">
     <div class="container mb-5">
         <div class="sticky-top p-3" style="background-color: white;">
             <h1 class="mt-3 mb-3">English Language Essay Generator</h1>
