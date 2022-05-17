@@ -3,7 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <title>VCE English Language Essay Generator</title>
+    <title>Essay Generator</title>
     <meta charset="utf-8">
     <script>
         function loadProgress() {
@@ -75,7 +75,7 @@
 
         function generateEssay() {
             saveProgress();
-            window.location.href = './essay_generator_complete.html';
+            window.location.href = './essay_complete.html';
         }
 
         function reset() {
@@ -88,7 +88,7 @@
 <body onload="loadProgress()">
     <div class="container mb-5">
         <div class="sticky-top p-3" style="background-color: white;">
-            <h1 class="mt-3 mb-3">English Language Essay Generator</h1>
+            <h1 class="mt-3 mb-3">Essay Generator</h1>
             <button id="generateEssayButton" class="btn btn-primary mx-1">
 				Generate essay
 			</button>
@@ -110,12 +110,12 @@
 						id="introduction-contention"
 						class="form-control mb-3 mt-2 mb-3 mt-2"
 					></textarea>
-					<label for="introduction-linguistic-concept"
-						>Now, refer breifly to a <b>linguistic concept</b> that
+					<label for="introduction-evidence"
+						>Now, refer breifly to a <b>piece of evidence</b> that
 						<b>supports your contention</b>.</label
 					>
 					<textarea
-						id="introduction-linguistic-concept"
+						id="introduction-evidence"
 						class="form-control mb-3 mt-2"
 					></textarea>
 					<label for="introduction-to-first-para"
@@ -175,31 +175,31 @@
 						class="form-control mb-3 mt-2"
 					></textarea>
 					<label
-						>Refer to <b>two linguistic concepts</b>. For each,
+						>Refer to <b>two piece of evidences</b>. For each,
 						explain their <b>relevance</b> to the topic sentence and
 						give <b>at least one</b>
 						example from contamporary Australian society.
 					</label>
 
 
-                <label for="first-para-first-linguistic-concept">First linguistic concept</label
+                <label for="first-para-first-evidence">First piece of evidence</label
 							>
 							<textarea
-								id="first-para-first-linguistic-concept"
+								id="first-para-first-evidence"
 								class="form-control mb-3 mt-2"
 							></textarea>
 							<label>Example</label>
-                <textarea id="first-para-first-linguistic-concept-example" class="form-control mb-3 mt-2"></textarea>
+                <textarea id="first-para-first-evidence-example" class="form-control mb-3 mt-2"></textarea>
 
 
-                <label for="first-para-second-linguistic-concept">Second linguistic concept</label
+                <label for="first-para-second-evidence">Second piece of evidence</label
 							>
 							<textarea
-								id="first-para-second-linguistic-concept"
+								id="first-para-second-evidence"
 								class="form-control mb-3 mt-2"
 							></textarea>
 							<label>Example</label>
-                <textarea id="first-para-second-linguistic-concept-example" class="form-control mb-3 mt-2"></textarea>
+                <textarea id="first-para-second-evidence-example" class="form-control mb-3 mt-2"></textarea>
 
 
                 <label for="first-para-linking-sentence">Link to the topic sentence of the second paragraph, or
@@ -231,31 +231,31 @@
 						class="form-control mb-3 mt-2"
 					></textarea>
 					<label
-						>Refer to <b>two linguistic concepts</b>. For each,
+						>Refer to <b>two piece of evidences</b>. For each,
 						explain their <b>relevance</b> to the topic sentence and
 						give <b>at least one</b>
 						example from contamporary Australian society.
 					</label>
 
 
-                <label for="second-para-first-linguistic-concept">First linguistic concept</label
+                <label for="second-para-first-evidence">First piece of evidence</label
 							>
 							<textarea
-								id="second-para-first-linguistic-concept"
+								id="second-para-first-evidence"
 								class="form-control mb-3 mt-2"
 							></textarea>
 							<label>Example</label>
-                <textarea id="second-para-first-linguistic-concept-example" class="form-control mb-3 mt-2"></textarea>
+                <textarea id="second-para-first-evidence-example" class="form-control mb-3 mt-2"></textarea>
 
 
-                <label for="second-para-second-linguistic-concept">Second linguistic concept</label
+                <label for="second-para-second-evidence">Second piece of evidence</label
 							>
 							<textarea
-								id="second-para-second-linguistic-concept"
+								id="second-para-second-evidence"
 								class="form-control mb-3 mt-2"
 							></textarea>
 							<label>Example</label>
-                <textarea id="second-para-second-linguistic-concept-example" class="form-control mb-3 mt-2"></textarea>
+                <textarea id="second-para-second-evidence-example" class="form-control mb-3 mt-2"></textarea>
 
 
                 <label for="second-para-linking-sentence">Link to the topic sentence of the third paragraph, or
@@ -287,31 +287,31 @@
 						class="form-control mb-3 mt-2"
 					></textarea>
 					<label
-						>Refer to <b>two linguistic concepts</b>. For each,
+						>Refer to <b>two piece of evidences</b>. For each,
 						explain their <b>relevance</b> to the topic sentence and
 						give <b>at least one</b>
 						example from contamporary Australian society.
 					</label>
 
 
-                <label for="third-para-first-linguistic-concept">First linguistic concept</label
+                <label for="third-para-first-evidence">First piece of evidence</label
 							>
 							<textarea
-								id="third-para-first-linguistic-concept"
+								id="third-para-first-evidence"
 								class="form-control mb-3 mt-2"
 							></textarea>
 							<label>Example</label>
-                <textarea id="third-para-first-linguistic-concept-example" class="form-control mb-3 mt-2"></textarea>
+                <textarea id="third-para-first-evidence-example" class="form-control mb-3 mt-2"></textarea>
 
 
-                <label for="third-para-second-linguistic-concept">Second linguistic concept</label
+                <label for="third-para-second-evidence">Second piece of evidence</label
 							>
 							<textarea
-								id="third-para-second-linguistic-concept"
+								id="third-para-second-evidence"
 								class="form-control mb-3 mt-2"
 							></textarea>
 							<label>Example</label>
-                <textarea id="third-para-second-linguistic-concept-example" class="form-control mb-3 mt-2"></textarea>
+                <textarea id="third-para-second-evidence-example" class="form-control mb-3 mt-2"></textarea>
 
 
                 <label for="third-para-linking-sentence">Link to the topic sentence of the fourth paragraph, or
@@ -342,31 +342,31 @@
 						class="form-control mb-3 mt-2"
 					></textarea>
 					<label
-						>Refer to <b>two linguistic concepts</b>. For each,
+						>Refer to <b>two piece of evidences</b>. For each,
 						explain their <b>relevance</b> to the topic sentence and
 						give <b>at least one</b>
 						example from contamporary Australian society.
 					</label>
 
 
-                <label for="fourth-para-first-linguistic-concept">First linguistic concept</label
+                <label for="fourth-para-first-evidence">First piece of evidence</label
 							>
 							<textarea
-								id="fourth-para-first-linguistic-concept"
+								id="fourth-para-first-evidence"
 								class="form-control mb-3 mt-2"
 							></textarea>
 							<label>Example</label>
-                <textarea id="fourth-para-first-linguistic-concept-example" class="form-control mb-3 mt-2"></textarea>
+                <textarea id="fourth-para-first-evidence-example" class="form-control mb-3 mt-2"></textarea>
 
 
-                <label for="fourth-para-second-linguistic-concept">Second linguistic concept</label
+                <label for="fourth-para-second-evidence">Second piece of evidence</label
 							>
 							<textarea
-								id="fourth-para-second-linguistic-concept"
+								id="fourth-para-second-evidence"
 								class="form-control mb-3 mt-2"
 							></textarea>
 							<label>Example</label>
-                <textarea id="fourth-para-second-linguistic-concept-example" class="form-control mb-3 mt-2"></textarea>
+                <textarea id="fourth-para-second-evidence-example" class="form-control mb-3 mt-2"></textarea>
 
 
                 <label for="fourth-para-linking-sentence">Link to the topic sentence of the conclusion, or back
