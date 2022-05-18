@@ -7,31 +7,39 @@
 </head>
 
 <body>
-    <div id="container" class="container mt-5" contenteditable="true">
-        <p class="text-justify" id="introduction"></p>
-        <p class="text-justify" id="first-para"></p>
-        <p class="text-justify" id="second-para"></p>
-        <p class="text-justify" id="third-para"></p>
-        <p class="text-justify" id="fourth-para"></p>
-        <p class="text-justify" id="conclusion"></p>
-    </div>
-    <script>
-        const essayArray = JSON.parse(localStorage.getItem('essayArray'));
+    <div id="container" class="container mt-5">
+        <div class="card card-body">
+            <b class="text-center">Love this tool&quest; Please consider
+					<a href="https://www.buymeacoffee.com/finley "
+						>buying me a coffee</a
+					>!</b
+				>
+			</div>
+			<div contenteditable="true" class="mt-5">
+				<p class="text-justify" id="introduction"></p>
+				<p class="text-justify" id="first-para"></p>
+				<p class="text-justify" id="second-para"></p>
+				<p class="text-justify" id="third-para"></p>
+				<p class="text-justify" id="fourth-para"></p>
+				<p class="text-justify" id="conclusion"></p>
+			</div>
+		</div>
+		<script>
+			const essayArray = JSON.parse(localStorage.getItem('essayArray'));
 
-        console.log(essayArray);
-        document.getElementById('introduction').innerHTML =
-            essayArray[0].join(' ');
-        document.getElementById('first-para').innerHTML =
-            essayArray[1].join(' ');
-        document.getElementById('second-para').innerHTML =
-            essayArray[2].join(' ');
-        document.getElementById('third-para').innerHTML =
-            essayArray[3].join(' ');
-        document.getElementById('fourth-para').innerHTML =
-            essayArray[4].join(' ');
-        document.getElementById('conclusion').innerHTML =
-            essayArray[5].join(' ');
-    </script>
-</body>
-
+			console.log(essayArray);
+			document.getElementById('introduction').innerHTML =
+				essayArray[0].join(' ');
+			document.getElementById('first-para').innerHTML =
+				essayArray[1].join(' ');
+			document.getElementById('second-para').innerHTML =
+				essayArray[2].join(' ');
+			document.getElementById('third-para').innerHTML =
+				essayArray[3].join(' ');
+			document.getElementById('fourth-para').innerHTML =
+				essayArray[4].join(' ');
+			document.getElementById('conclusion').innerHTML =
+				essayArray[5].join(' ');
+		</script>
+	</body>
 </html>

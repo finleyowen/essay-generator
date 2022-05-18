@@ -22,12 +22,12 @@
                     let formElemet = document.getElementById(idsArray[i]);
                     let elementsArray = formElemet.elements;
                     for (let j = 0; j < elementsArray.length; j++) {
-                        console.log(elementsArray[j], paraArray[j]);
                         elementsArray[j].value = paraArray[j];
                     }
                 }
             } catch (e) {
                 var essayArray = [];
+                alert('Welcome to the Essay Generator Tool. Simply fill out the form, then press the "Generate essay" button. You can then copy/paste the generated essay into another document to edit and finalise. Please note that if you leave this page, you NEED to press the "Save changes" button or you will lose your work. Also please note that you should finish each input with a full stop for the essay to be put together correctly. Good luck :)')
             }
         }
 
@@ -82,8 +82,6 @@
             localStorage.removeItem('essayArray');
             location.reload();
         }
-
-        alert('Welcome to the Essay Generator Tool. Simply fill out the form, then press the "Generate essay" button. You can then copy/paste the generated essay into another document to edit and finalise. Please note that if you leave this page, you NEED to press the "Save changes" button or you will lose your work. Also please note that you should finish each input with a full stop for the essay to be put together correctly. Good luck :)')
     </script>
 </head>
 
@@ -102,79 +100,81 @@
 			</button>
             <hr />
         </div>
+        <div class="card m-3 card-body">
+            <b class="text-center ">Love this tool&quest; Please consider
+				<a href="https://www.buymeacoffee.com/finley "
+					>buying me a coffee</a
+				>!</b
+				>
+		</div>
         <h2>Introduction</h2>
         <form id="introduction">
             <div class="form-group">
-                <label for="introduction-contention">In one sentence, respond to the essay topic and state
-						your <b>contention</b>.</label
-					>
-					<textarea
-						id="introduction-contention"
-						class="form-control mb-3 mt-2 mb-3 mt-2"
-					></textarea>
-					<label for="introduction-evidence"
-						>Now, refer breifly to a <b>piece of evidence</b> that
+                <label for="introduction-contention ">In one sentence, respond to the essay topic and state
+						your <b>contention</b>.</label>
+            <textarea id="introduction-contention " class="form-control mb-3 mt-2 mb-3 mt-2 "></textarea>
+            <label for="introduction-evidence ">Now, refer breifly to a <b>piece of evidence</b> that
 						<b>supports your contention</b>.</label
 					>
 					<textarea
-						id="introduction-evidence"
-						class="form-control mb-3 mt-2"
+						id="introduction-evidence "
+						class="form-control mb-3 mt-2 "
 					></textarea>
-					<label for="introduction-to-first-para"
+					<label for="introduction-to-first-para "
 						>Introduce your body paragraphs. <b>Note:</b> if your
 						essay only contains three paragraphs, leave all inputs
 						related to the fourth paragraph empty.</label
 					>
 							<textarea
-								id="introduction-to-first-para"
-								class="form-control mb-3 mt-2"
+								id="introduction-to-first-para "
+								class="form-control mb-3 mt-2 "
 							></textarea>
 							<textarea
-								id="introduction-to-second-para"
-								class="form-control mb-3 mt-2"
-							></textarea>
-						
-						
-							<textarea
-								id="introduction-to-third-para"
-								class="form-control mb-3 mt-2"
+								id="introduction-to-second-para "
+								class="form-control mb-3 mt-2 "
 							></textarea>
 						
 						
 							<textarea
-								id="introduction-to-fourth-para"
-								class="form-control mb-3 mt-2"
+								id="introduction-to-third-para "
+								class="form-control mb-3 mt-2 "
+							></textarea>
+						
+						
+							<textarea
+								id="introduction-to-fourth-para "
+								class="form-control mb-3 mt-2 "
 							></textarea>
 						
 					
-					<label for="introduction-linking-sentence"
+					<label for="introduction-linking-sentence "
 						>Link to the topic sentence of the first paragraph, or
 						back to the contention.</label
 					>
 					<textarea
-						id="introduction-linking-sentence"
-						class="form-control mb-3 mt-2"
+						id="introduction-linking-sentence "
+						class="form-control mb-3 mt-2 "
 					></textarea>
 				</div>
 				</form>
 				<form id="first-para">
-				<div class="form-group">
+				<div class="form-group ">
 					<h2>First body paragraph</h2>
-					<label for="first-para-topic-sentence"
+					<label for="first-para-topic-sentence "
 						>State the <b>topic sentence</b> of this
 						paragraph.</label
 					>
 					<textarea
-						id="first-para-topic-sentence"
-						class="form-control mb-3 mt-2"
+						id="first-para-topic-sentence "
+						class="form-control mb-3 mt-2 "
 					></textarea>
-					<label for="first-para-topic-sentence-elaboration"
+					<label for="first-para-topic-sentence-elaboration "
 						>Elaborate on the <b>topic sentence</b> of this
 						paragraph.</label
 					>
 					<textarea
-						id="first-para-topic-sentence-elaboration"
-						class="form-control mb-3 mt-2"
+						id="first-para-topic-sentence-elaboration "
+						class="form-control mb-3 mt-2 "
 					></textarea>
 					<label
 						>Refer to <b>two piece of evidences</b>. For each,
@@ -184,53 +184,53 @@
 					</label>
 
 
-                <label for="first-para-first-evidence">First piece of evidence</label
+            <label for="first-para-first-evidence ">First piece of evidence</label
 							>
 							<textarea
-								id="first-para-first-evidence"
-								class="form-control mb-3 mt-2"
+								id="first-para-first-evidence "
+								class="form-control mb-3 mt-2 "
 							></textarea>
 							<label>Example</label>
-                <textarea id="first-para-first-evidence-example" class="form-control mb-3 mt-2"></textarea>
+            <textarea id="first-para-first-evidence-example " class="form-control mb-3 mt-2 "></textarea>
 
 
-                <label for="first-para-second-evidence">Second piece of evidence</label
+            <label for="first-para-second-evidence ">Second piece of evidence</label
 							>
 							<textarea
-								id="first-para-second-evidence"
-								class="form-control mb-3 mt-2"
+								id="first-para-second-evidence "
+								class="form-control mb-3 mt-2 "
 							></textarea>
 							<label>Example</label>
-                <textarea id="first-para-second-evidence-example" class="form-control mb-3 mt-2"></textarea>
+            <textarea id="first-para-second-evidence-example " class="form-control mb-3 mt-2 "></textarea>
 
 
-                <label for="first-para-linking-sentence">Link to the topic sentence of the second paragraph, or
+            <label for="first-para-linking-sentence ">Link to the topic sentence of the second paragraph, or
 						back to the contention.</label
 					>
 					<textarea
-						id="first-para-linking-sentence"
-						class="form-control mb-3 mt-2"
+						id="first-para-linking-sentence "
+						class="form-control mb-3 mt-2 "
 					></textarea>
 				</div>
 				</form>
-				<form id='second-para'>
-				<div class="form-group">
+				<form id="second-para">
+				<div class="form-group ">
 					<h2>Second body paragraph</h2>
-					<label for="second-para-topic-sentence"
+					<label for="second-para-topic-sentence "
 						>State the <b>topic sentence</b> of this
 						paragraph.</label
 					>
 					<textarea
-						id="second-para-topic-sentence"
-						class="form-control mb-3 mt-2"
+						id="second-para-topic-sentence "
+						class="form-control mb-3 mt-2 "
 					></textarea>
-					<label for="second-para-topic-sentence-elaboration"
+					<label for="second-para-topic-sentence-elaboration "
 						>Elaborate on the <b>topic sentence</b> of this
 						paragraph.</label
 					>
 					<textarea
-						id="second-para-topic-sentence-elaboration"
-						class="form-control mb-3 mt-2"
+						id="second-para-topic-sentence-elaboration "
+						class="form-control mb-3 mt-2 "
 					></textarea>
 					<label
 						>Refer to <b>two piece of evidences</b>. For each,
@@ -240,53 +240,53 @@
 					</label>
 
 
-                <label for="second-para-first-evidence">First piece of evidence</label
+            <label for="second-para-first-evidence ">First piece of evidence</label
 							>
 							<textarea
-								id="second-para-first-evidence"
-								class="form-control mb-3 mt-2"
+								id="second-para-first-evidence "
+								class="form-control mb-3 mt-2 "
 							></textarea>
 							<label>Example</label>
-                <textarea id="second-para-first-evidence-example" class="form-control mb-3 mt-2"></textarea>
+            <textarea id="second-para-first-evidence-example " class="form-control mb-3 mt-2 "></textarea>
 
 
-                <label for="second-para-second-evidence">Second piece of evidence</label
+            <label for="second-para-second-evidence ">Second piece of evidence</label
 							>
 							<textarea
-								id="second-para-second-evidence"
-								class="form-control mb-3 mt-2"
+								id="second-para-second-evidence "
+								class="form-control mb-3 mt-2 "
 							></textarea>
 							<label>Example</label>
-                <textarea id="second-para-second-evidence-example" class="form-control mb-3 mt-2"></textarea>
+            <textarea id="second-para-second-evidence-example " class="form-control mb-3 mt-2 "></textarea>
 
 
-                <label for="second-para-linking-sentence">Link to the topic sentence of the third paragraph, or
+            <label for="second-para-linking-sentence ">Link to the topic sentence of the third paragraph, or
 						back to the contention.</label
 					>
 					<textarea
-						id="second-para-linking-sentence"
-						class="form-control mb-3 mt-2"
+						id="second-para-linking-sentence "
+						class="form-control mb-3 mt-2 "
 					></textarea>
 				</div>
 				</form>
 				<form id="third-para">
-				<div class="form-group">
+				<div class="form-group ">
 					<h2>Third body paragraph</h2>
-					<label for="third-para-topic-sentence"
+					<label for="third-para-topic-sentence "
 						>State the <b>topic sentence</b> of this
 						paragraph.</label
 					>
 					<textarea
-						id="third-para-topic-sentence"
-						class="form-control mb-3 mt-2"
+						id="third-para-topic-sentence "
+						class="form-control mb-3 mt-2 "
 					></textarea>
-					<label for="third-para-topic-sentence-elaboration"
+					<label for="third-para-topic-sentence-elaboration "
 						>Elaborate on the <b>topic sentence</b> of this
 						paragraph.</label
 					>
 					<textarea
-						id="third-para-topic-sentence-elaboration"
-						class="form-control mb-3 mt-2"
+						id="third-para-topic-sentence-elaboration "
+						class="form-control mb-3 mt-2 "
 					></textarea>
 					<label
 						>Refer to <b>two piece of evidences</b>. For each,
@@ -296,52 +296,52 @@
 					</label>
 
 
-                <label for="third-para-first-evidence">First piece of evidence</label
+            <label for="third-para-first-evidence ">First piece of evidence</label
 							>
 							<textarea
-								id="third-para-first-evidence"
-								class="form-control mb-3 mt-2"
+								id="third-para-first-evidence "
+								class="form-control mb-3 mt-2 "
 							></textarea>
 							<label>Example</label>
-                <textarea id="third-para-first-evidence-example" class="form-control mb-3 mt-2"></textarea>
+            <textarea id="third-para-first-evidence-example " class="form-control mb-3 mt-2 "></textarea>
 
 
-                <label for="third-para-second-evidence">Second piece of evidence</label
+            <label for="third-para-second-evidence ">Second piece of evidence</label
 							>
 							<textarea
-								id="third-para-second-evidence"
-								class="form-control mb-3 mt-2"
+								id="third-para-second-evidence "
+								class="form-control mb-3 mt-2 "
 							></textarea>
 							<label>Example</label>
-                <textarea id="third-para-second-evidence-example" class="form-control mb-3 mt-2"></textarea>
+            <textarea id="third-para-second-evidence-example " class="form-control mb-3 mt-2 "></textarea>
 
 
-                <label for="third-para-linking-sentence">Link to the topic sentence of the fourth paragraph, or
+            <label for="third-para-linking-sentence ">Link to the topic sentence of the fourth paragraph, or
 						back to the contention.</label
 					>
 					<textarea
-						id="third-para-linking-sentence"
-						class="form-control mb-3 mt-2"
+						id="third-para-linking-sentence "
+						class="form-control mb-3 mt-2 "
 					></textarea>
 				</div>
 				</form><form id="fourth-para">
-				<div class="form-group">
+				<div class="form-group ">
 					<h2>Fourth body paragraph</h2>
-					<label for="fourth-para-topic-sentence"
+					<label for="fourth-para-topic-sentence "
 						>State the <b>topic sentence</b> of this
 						paragraph.</label
 					>
 					<textarea
-						id="fourth-para-topic-sentence"
-						class="form-control mb-3 mt-2"
+						id="fourth-para-topic-sentence "
+						class="form-control mb-3 mt-2 "
 					></textarea>
-					<label for="fourth-para-topic-sentence-elaboration"
+					<label for="fourth-para-topic-sentence-elaboration "
 						>Elaborate on the <b>topic sentence</b> of this
 						paragraph.</label
 					>
 					<textarea
-						id="fourth-para-topic-sentence-elaboration"
-						class="form-control mb-3 mt-2"
+						id="fourth-para-topic-sentence-elaboration "
+						class="form-control mb-3 mt-2 "
 					></textarea>
 					<label
 						>Refer to <b>two piece of evidences</b>. For each,
@@ -351,52 +351,52 @@
 					</label>
 
 
-                <label for="fourth-para-first-evidence">First piece of evidence</label
+            <label for="fourth-para-first-evidence ">First piece of evidence</label
 							>
 							<textarea
-								id="fourth-para-first-evidence"
-								class="form-control mb-3 mt-2"
+								id="fourth-para-first-evidence "
+								class="form-control mb-3 mt-2 "
 							></textarea>
 							<label>Example</label>
-                <textarea id="fourth-para-first-evidence-example" class="form-control mb-3 mt-2"></textarea>
+            <textarea id="fourth-para-first-evidence-example " class="form-control mb-3 mt-2 "></textarea>
 
 
-                <label for="fourth-para-second-evidence">Second piece of evidence</label
+            <label for="fourth-para-second-evidence ">Second piece of evidence</label
 							>
 							<textarea
-								id="fourth-para-second-evidence"
-								class="form-control mb-3 mt-2"
+								id="fourth-para-second-evidence "
+								class="form-control mb-3 mt-2 "
 							></textarea>
 							<label>Example</label>
-                <textarea id="fourth-para-second-evidence-example" class="form-control mb-3 mt-2"></textarea>
+            <textarea id="fourth-para-second-evidence-example " class="form-control mb-3 mt-2 "></textarea>
 
 
-                <label for="fourth-para-linking-sentence">Link to the topic sentence of the conclusion, or back
+            <label for="fourth-para-linking-sentence ">Link to the topic sentence of the conclusion, or back
 						to the contention.</label
 					>
 					<textarea
-						id="fourth-para-linking-sentence"
-						class="form-control mb-3 mt-2"
+						id="fourth-para-linking-sentence "
+						class="form-control mb-3 mt-2 "
 					></textarea>
 				</div>
 				</form>
 				<form id="conclusion">
-				<div class="form-group">
+				<div class="form-group ">
 					<h2>Conclusion</h2>
-					<label for="conclusion-topic-sentence"
+					<label for="conclusion-topic-sentence "
 						>In one sentence, state the conclusion of your essay.
 						<b>Refer to the essay topic</b></label
 					>
 					<textarea
-						id="conclusion-topic-sentence"
-						class="form-control mb-3 mt-2"
+						id="conclusion-topic-sentence "
+						class="form-control mb-3 mt-2 "
 					></textarea>
-					<label for="conclusion-topic-sentence-elaboration"
+					<label for="conclusion-topic-sentence-elaboration "
 						>Elaborate on the <b>conclusion</b> of the essay.</label
 					>
 					<textarea
-						id="conclusion-topic-sentence-elaboration"
-						class="form-control mb-3 mt-2"
+						id="conclusion-topic-sentence-elaboration "
+						class="form-control mb-3 mt-2 "
 					></textarea>
 					<label
 						>For each of your body paragraphs, briefly refer to how
@@ -405,35 +405,35 @@
 					
 						
 							<textarea
-								id="conclusion-first-para-reference"
-								class="form-control mb-3 mt-2"
+								id="conclusion-first-para-reference "
+								class="form-control mb-3 mt-2 "
 							></textarea>
 						
 						
 							<textarea
-								id="conclusion-second-para-reference"
-								class="form-control mb-3 mt-2"
+								id="conclusion-second-para-reference "
+								class="form-control mb-3 mt-2 "
 							></textarea>
 						
 						
 							<textarea
-								id="conclusion-third-para-reference"
-								class="form-control mb-3 mt-2"
+								id="conclusion-third-para-reference "
+								class="form-control mb-3 mt-2 "
 							></textarea>
 						
 						
 							<textarea
-								id="conclusion-fourth-para-reference"
-								class="form-control mb-3 mt-2"
+								id="conclusion-fourth-para-reference "
+								class="form-control mb-3 mt-2 "
 							></textarea>
 						
 					
-					<label for="conclusion-closing-sentence"
+					<label for="conclusion-closing-sentence "
 						>Wrap your essay up with a closing sentence.</label
 					>
 					<textarea
-						id="conclusion-closing-sentence"
-						class="form-control mb-3 mt-2"
+						id="conclusion-closing-sentence "
+						class="form-control mb-3 mt-2 "
 					></textarea>
 				</div>
 				</form>
@@ -441,24 +441,24 @@
 		</div>
 		<script>
 			document
-				.getElementById('generateEssayButton')
-				.addEventListener('click', function(event) {
-					event.preventDefault();
-					generateEssay();
-				});
+            .getElementById('generateEssayButton')
+            .addEventListener('click', function(event) {
+                event.preventDefault();
+                generateEssay();
+            });
 
-			document
-				.getElementById('saveProgressButton')
-				.addEventListener('click', function(event) {
-					event.preventDefault();
-					saveProgress();
-				});
-			document
-				.getElementById('resetButton')
-				.addEventListener('click', function(event) {
-					event.preventDefault();
-					reset();
-				});
+        document
+            .getElementById('saveProgressButton')
+            .addEventListener('click', function(event) {
+                event.preventDefault();
+                saveProgress();
+            });
+        document
+            .getElementById('resetButton')
+            .addEventListener('click', function(event) {
+                event.preventDefault();
+                reset();
+            });
 		</script>
 	</body>
 </html>
